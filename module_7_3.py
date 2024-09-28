@@ -24,7 +24,8 @@ class WordsFinder:
                 word_number += 1
                 if need in word:
                     result[name] = word_number
-                    return result
+                    break
+        return result
 
     def count(self, word):
         result = {}
@@ -32,7 +33,7 @@ class WordsFinder:
             need = word.lower()
             if need in words:
                 result[name] = words.count(need)
-                return result
+        return result
 
 
 #  Пример выполнения программы:
